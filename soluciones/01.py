@@ -4,3 +4,4 @@ datos = pd.read_csv('data/personas.csv')
 
 print (datos.sample(10))
 
+
