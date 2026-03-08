@@ -1,18 +1,22 @@
 import pandas as pd
+import unicodedata
 
 df = pd.read_csv("data/personas.csv")
 
-# normalizar ciudad
+def quitar_tildes(texto):
+    return unicodedata.normalize('NFD', str(texto)).encode('ascii', 'ignore').decode('utf-8')
+
 df["ciudad"] = (
     df["ciudad"]
-    .astype(str)
+    .apply(quitar_tildes)
+    .str.replace(r'\t', '', regex=True)
+    .str.replace(r"[^a-zA-Z ]", "", regex=True)
     .str.strip()
     .str.lower()
-    .str.replace("á","a")
-    .str.replace(r"[^a-z]", "", regex=True)
+    .str.replace(r"\s+", " ", regex=True)
+    .str.strip()
 )
 
-# contar ciudades únicas
-cantidad_ciudades = df["ciudad"].nunique()
+ciudades_unicas = df["ciudad"].nunique()
 
-print("Número de ciudades únicas después de normalizar:", cantidad_ciudades)
+print(f"Existen {ciudades_unicas} ciudades únicas en el dataset.")

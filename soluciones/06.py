@@ -13,4 +13,4 @@ df["ciudad"] = (
 
 cantidad = (df["ciudad"] == "bogota").sum()
 
-print(f"Después de limpiar los datos, existen {cantidad} registros correspondientes a la ciudad de Bogotá.")
+print(f"Existen {cantidad} registros correspondientes a la ciudad de Bogotá.")
