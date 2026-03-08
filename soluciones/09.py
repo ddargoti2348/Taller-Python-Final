@@ -1,7 +1,7 @@
 import pandas as pd
 import unicodedata
 
-df = pd.read_csv("data/personas.csv")
+df = pd.read_csv('data/personas.csv')
 
 def quitar_tildes(texto):
     return unicodedata.normalize('NFD', str(texto)).encode('ascii', 'ignore').decode('utf-8')
@@ -17,8 +17,8 @@ df["profesion"] = (
     .str.strip()
 )
 
-# Corrección de profesiones con vocales eliminadas
-# Identificadas tras inspección completa del dataset
+# Corrección de profesiones con @ en lugar de 'a' y 3 en lugar de 'e'
+# Ejemplo: 'Ing3ni3ro' → limpia como 'ingniro' → se corrige a 'ingeniero'
 correcciones = {
     'abogdo':       'abogado',
     'administrdor': 'administrador',
