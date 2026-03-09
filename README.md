@@ -135,10 +135,10 @@ A continuación se listan los 30 ejercicios. **Debe escribir el valor exacto de 
 | 10 | ¿Cuántos registros tienen la profesión "Programador" después de limpiar? | `Existen 11875 registros con la profesión 'Programador'` |
 | 11 | ¿Cuántas profesiones únicas existen después de normalizar? | `Existen 44 profesiones únicas después de normalizar y corregir.` |
 | 12 | ¿Cuántos registros tienen el campo `email` con espacios adicionales? | `Existen 45447 registros con espacios adicionales en elcampo email` |
-| 13 | ¿Cuántos registros tienen el campo `salario` con caracteres no numéricos? | `Existen 67117 registros con caracteres no numéricos en el campo salario.` |
-| 14 | ¿Cuál es el salario promedio después de limpiar? | `PENDIENTE` |
-| 15 | ¿Cuál es el salario máximo después de limpiar? | `PENDIENTE` |
-| 16 | ¿Cuál es el salario mínimo después de limpiar? | `PENDIENTE` |
+| 13 | ¿Cuántos registros tienen el campo `salario` con caracteres no numéricos? | `Existen 85266 registros con caracteres no numéricos en el campo salario.` |
+| 14 | ¿Cuál es el salario promedio después de limpiar? | `El salario promedio es 7,659,644.90` |
+| 15 | ¿Cuál es el salario máximo después de limpiar? | `El salario máximo después de limpiar es: 14,999,995.00` |
+| 16 | ¿Cuál es el salario mínimo después de limpiar? | `1,000,032.00` |
 | 17 | ¿Cuántos registros tienen `activo` como verdadero después de normalizar? | `PENDIENTE` |
 | 18 | ¿Cuántos registros tienen `activo` como falso después de normalizar? | `PENDIENTE` |
 | 19 | ¿Cuántos registros tienen fecha de nacimiento con formato diferente a YYYY-MM-DD? | `PENDIENTE` |
