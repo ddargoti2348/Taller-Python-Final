@@ -144,9 +144,9 @@ A continuación se listan los 30 ejercicios. **Debe escribir el valor exacto de 
 | 19 | ¿Cuántos registros tienen fecha de nacimiento con formato diferente a YYYY-MM-DD? | `Existen 89823 registros con formato diferente a YYYY-MM-DD` |
 | 20 | ¿Cuántas personas nacieron entre 1990 y 2000 (inclusive)? | `Personas nacidas entre 1990 y 2000 son: 37518` |
 | 21 | ¿Cuántas personas nacieron antes de 1960? | `Personas nacidas antes de 1960: 46713` |
-| 22 | ¿Cuántas personas tienen más de 50 años (fecha actual: 2026-02-26)? | `` |
-| 23 | ¿Cuántos registros tienen nombre "Carlos" y viven en "Cali"? | `PENDIENTE` |
-| 24 | ¿Cuántos registros tienen nombre "Ana" y son "Medico"? | `PENDIENTE` |
+| 22 | ¿Cuántas personas tienen más de 50 años (fecha actual: 2026-02-26)? | `Personas con más de 50 años a fecha 2026-02-26: 98214` |
+| 23 | ¿Cuántos registros tienen nombre "Carlos" y viven en "Cali"? | `Registros con nombre 'Carlos' que viven en Cali: 186` |
+| 24 | ¿Cuántos registros tienen nombre "Ana" y son "Medico"? | `` |
 | 25 | ¿Cuántos registros tienen profesión "Abogado" y salario > 10,000,000? | `PENDIENTE` |
 | 26 | ¿Cuántos registros tienen ciudad "Barranquilla", activos y nacidos después de 1980? | `PENDIENTE` |
 | 27 | ¿Cuál es la ciudad con más "Ingenieros"? | `PENDIENTE` |
