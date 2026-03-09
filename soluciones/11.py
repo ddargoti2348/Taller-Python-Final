@@ -17,31 +17,6 @@ df["profesion"] = (
     .str.strip()
 )
 
-# Corrección de profesiones con vocales eliminadas
-# Identificadas tras inspección completa del dataset
-correcciones = {
-    'abogdo':       'abogado',
-    'administrdor': 'administrador',
-    'arquitcto':    'arquitecto',
-    'chf':          'chef',
-    'contdor':      'contador',
-    'crpintro':     'carpintero',
-    'disndor':      'disenador',
-    'economist':    'economista',
-    'elctricist':   'electricista',
-    'enfrmro':      'enfermero',
-    'ingniro':      'ingeniero',
-    'mcnico':       'mecanico',
-    'mdico':        'medico',
-    'plomro':       'plomero',
-    'priodist':     'periodista',
-    'profsor':      'profesor',
-    'progrmdor':    'programador',
-    'trductor':     'traductor',
-    'vtrinrio':     'veterinario',
-}
-
-df["profesion"] = df["profesion"].replace(correcciones)
 
 profesiones_unicas = df["profesion"].nunique()
 print(f"Existen {profesiones_unicas} profesiones únicas después de normalizar y corregir.")
