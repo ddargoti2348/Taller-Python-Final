@@ -8,8 +8,8 @@ df = pd.read_csv("data/personas.csv")
 df["salario"] = (
     df["salario"]
     .astype(str)
-    .str.replace(',', '.', regex=False)       # coma decimal → punto
-    .str.replace(r'[^0-9.]', '', regex=True)  # eliminar todo excepto dígitos y punto
+    .str.replace(',', '.', regex=False)       
+    .str.replace(r'[^0-9.]', '', regex=True)  
 )
 
 df["salario"] = pd.to_numeric(df["salario"], errors='coerce')
