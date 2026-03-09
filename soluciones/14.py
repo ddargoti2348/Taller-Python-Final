@@ -16,6 +16,3 @@ df["salario"] = pd.to_numeric(df["salario"], errors='coerce')
 
 promedio = df["salario"].mean()
 print(f"El salario promedio después de limpiar es: {promedio:,.2f}")
-
-promedio = df["salario"].mean()
-print(f"El salario promedio después de limpiar es: {promedio:,.2f}")
